@@ -16,7 +16,7 @@ ${CLI} config:set SECRET_KEY_BASE="$secret_token"
 ${CLI} run rake ${rake_commands} || true
 
 # scale
-${CLI} scale web=1 worker=1 || true
+${CLI} scale web=1 || true
 
 # restart
 service ${APP_NAME} restart
